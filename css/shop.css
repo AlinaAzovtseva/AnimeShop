@@ -210,6 +210,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  cursor: pointer;
 }
 .basket p {
   padding: 7px 13px 7px 15px;
@@ -218,6 +219,13 @@ body {
   margin-right: 15px;
   width: 30px;
   height: 30px;
+}
+
+.basket:hover {
+  padding-bottom: 5px;
+  -webkit-box-shadow: 0 0 30px white;
+          box-shadow: 0 0 30px white;
+  background-color: #666;
 }
 
 .basket__inner {

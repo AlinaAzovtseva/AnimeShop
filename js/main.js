@@ -1,17 +1,17 @@
 
 let popupBg = document.querySelectorAll('.popup__bg');
 let popup = document.querySelector('.popup__content');
-let openPopup = document.querySelectorAll('.procuct__item');
+let openPopup = document.querySelectorAll('.product-img');
 let closePopup = document.querySelectorAll('.x');
 
-//open
-// openPopup.forEach((button) => {
-// 	button.addEventListener("click" ,(e) => {
-// 		let tabId = button.getAttribute("data-tab")
-// 		let currentTab = document.querySelector(tabId);
-// 		currentTab.classList.add('active');
-// 	});
-// });
+open
+openPopup.forEach((button) => {
+	button.addEventListener("click" ,(e) => {
+		let tabId = button.getAttribute("data-tab")
+		let currentTab = document.querySelector(tabId);
+		currentTab.classList.add('active');
+	});
+});
 
 //x
 closePopup.forEach((el) => {
@@ -82,18 +82,24 @@ window.addEventListener("click", function(event){
 
 	if(event.target.hasAttribute('data-cart')){
 		
-		const card = event.target.closest('.procuct__item');
+const card = event.target.closest('.procuct__item');
 		
-		const productInfo = {
-			id: card.getAttribute('data-tab'),
-			imgSrc: card.querySelector('.product-img').getAttribute('src'),
-			title: card.querySelector('.name__product').innerText,
-			price: card.querySelector('.price').innerText,
-			counter: card.querySelector('[data-counter]').innerText,
-		}
-		console.log(productInfo)
+const productInfo = {
+	id: card.getAttribute('data-id'),
+	imgSrc: card.querySelector('.product-img').getAttribute('src'),
+	title: card.querySelector('.name__product').innerText,
+	price: card.querySelector('.price').innerText,
+	counter: card.querySelector('[data-counter]').innerText,
+}
+		
+const itemInCart = cartWrapper.querySelector(`[data-id="${productInfo.id}"]`);
+	
+	 if(itemInCart){
+	 	const counterElement = itemInCart.querySelector('[data-counter]');
 
-		const cartItemHTML = `<div class="catr__inner" data-tab="${productInfo.id}">
+	 	counterElement.innerText = parseInt(counterElement.innerText) + parseInt(productInfo.counter);
+	 } else {
+		const cartItemHTML = `<div class="catr__inner" data-id="${productInfo.id}">
 								<img src="${productInfo.imgSrc}" alt="">
 								<div class="cart-info">
 									<div class="title-info">${productInfo.title}</div>
@@ -107,5 +113,8 @@ window.addEventListener("click", function(event){
 							</div>`
 
 		cartWrapper.insertAdjacentHTML('beforeend', cartItemHTML)			
+		 }
 	}
 })
+
+//console.log(itemInCart)
