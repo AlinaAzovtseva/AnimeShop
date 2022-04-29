@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Anime-shop</title>
+	<link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="menu">
+					<div class="menu-burger">
+						<span></span>
+					</div>
+					<div class="headre__logo">
+						<img src="img/logo.png" alt="" class="logo">
+					</div>
+					<ul class="memu__list">
+						<li class="pr_menu-item">
+							<a href="#">products</a><img src="img/row.png" alt="">
+								<ul class="product__sub-list">
+									<li>shirts</li>
+									<li>caps</li>
+									<li>bags</li>
+								</ul>
+						</li>
+						<li class="an_menu-item">
+							<a href="#">Anime</a><img src="img/row.png" alt="">
+								<ul class="anime__sub-list">
+									<li>Kimetsu no Yaiba</li>
+									<li>Naruto</li>
+									<li>Jujutsu Kaisen</li>
+									<li>Jojo’s Bizarre Adventure</li>
+									<li>Death Note</li>
+									<li>Tokyo Revengers</li>
+									<li>Boku no Hero</li>
+									<li>Dr. Stone</li>
+								</ul>
+						</li>
+						<li class="cl_menu-item">
+							<a href="#">collections</a><img src="img/row.png" alt="">
+								<ul class="collections__sub-list">
+									<li>Colección Amor</li>
+									<li>Colección navideña</li>
+									<li>Colección Halloween</li>
+									<li>Colección Kawaii</li>
+								</ul>
+						</li>
+						<li class="ab_menu-item">
+							<a href="#">About us</a><img src="img/row.png" alt="">
+							<ul class="about__sub-list">
+								<li>Internet supermarket of magical gifts for yourself and loved ones</li>
+							</ul>
+						</li>
+					</ul>
+					<img class="search" src="img/search.png" alt="">
+				</div>
+				<div class="basket">
+					<p>basket/0$</p>
+					<img src="img/basket.png" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="content">
+		<div class="container">
+			<div class="category">
+				<p class="beginning">Beginning/Products</p>
+				<ul class="number">
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li><img src="img/row-right.png" alt=""></li>
+				</ul>
+				<p class="showing">Showing 1 - 12 out of 35 results</p>
+				<button class="popular-btn">sort by popularity
+					<img src="img/row.png" alt="">
+				</button>
+			</div>	
+
+			<div class="products">
+				<div class="filter">
+					<p>Filters</p>
+					<div class="accordion">product <img src="img/row-top.png">
+
+					<ul class="accordion-content">
+						<li>shirts</li>
+						<li>caps</li>
+						<li>bags</li>
+					</ul>
+					</div>
+
+					<div class="accordion">anime <img src="img/row-top.png">
+						<ul class="accordion-content">
+						<li>Kimetsu no Yaiba</li>
+						<li>Naruto</li>
+						<li>Jujutsu Kaisen</li>
+						<li>Jojo’s Bizarre Adventure</li>
+						<li>Death Note</li>
+						<li>Tokyo Revengers</li>
+						<li>Boku no Hero</li>
+						<li>Dr. Stone</li>
+					</ul>
+					</div>
+
+					
+				</div>
+				<div class="product__list">
+<!-- //////////////////////////////////////////////////////////////// -->
+					<div class="procuct__item" data-tab="#tab_1">
+						<img class="product-img" src="img/product1.jpg" alt="">
+						<div class="name__product">Gorro Pain Akatsuki</div>
+						<div class="name__anime">Naruto</div>
+						<div class="price">$5.50</div>
+					</div>
+
+					<div class="popup__bg" id="tab_1">
+						<div class="popup__content">
+							<div class="content-img">
+								<img src="img/product1.jpg" alt="">
+								<div class="img-mini">
+									<img src="img/mini1.jpg" alt="">
+									<img src="img/mini2.jpg" alt="">
+								</div>
+							</div>
+							<div class="content-text">
+								<div class="name__product">Gorro Pain Akatsuki</div>
+								<div class="name__anime">Naruto</div>
+								<div class="pp__text">
+									<p>Polera de Sukuna del anime Jujutsu Kaisen, personalizada con técnica  de serigrafía 
+									100% artesanal y ecológica. </p>
+									<p>Técnica de reproducción de imágenes que consiste en hacer pasar tinta a través de un tejido montado en un bastidores de aluminio o madera que constituye el molde de impresión. Existen diferentes tipos de tintas, nosotros trabajamos con plastisol.</p>
+									<p>Pros: Alta resistencia y definición, mas suave al tacto, diseños mas económicos.</p>
+									<p>Contras: No se pueden solicitar modificaciones a los diseños en serigrafía debido a que se hacen con una matiz.</p>
+								</div>
+								<div class="color">
+									<p>Color</p>
+									<div class="white"></div>
+									<div class="black"></div>
+									<div class="grey"></div>
+								</div>
+								<div class="sizes">
+									<p class="size-name">Sizes</p>
+									<p>XS - S - M - L - XL</p>
+								</div>
+								<div class="price">
+									<p class="pice-name">Price</p>
+									<p>$5.50</p>
+								</div>
+							</div>
+							<div class="x">
+								<img src="img/x.svg" alt="">
+							</div>
+						</div>
+					</div>
+<!-- /////////////////////////////////////////////////////////////// -->
+					<div class="procuct__item" data-tab="#tab_2">
+						<img class="product-img" src="img/product2.jpg" alt="">
+						<div class="name__product">Polera Sukuna</div>
+						<div class="name__anime">Jujutsu Kaisen</div>
+						<div class="price">$7.50</div>
+					</div>
+
+					<div class="popup__bg" id="tab_2">
+						<div class="popup__content">
+							<div class="content-img">
+								<img src="img/product2.jpg" alt="">
+								<div class="img-mini">
+									<img src="img/mini1.jpg" alt="">
+									<img src="img/mini2.jpg" alt="">
+								</div>
+							</div>
+							<div class="content-text">
+								<div class="name__product">Gorro Pain Akatsuki</div>
+								<div class="name__anime">Naruto</div>
+								<div class="pp__text">
+									<p>Polera de Sukuna del anime Jujutsu Kaisen, personalizada con técnica  de serigrafía 
+									100% artesanal y ecológica. </p>
+									<p>Técnica de reproducción de imágenes que consiste en hacer pasar tinta a través de un tejido montado en un bastidores de aluminio o madera que constituye el molde de impresión. Existen diferentes tipos de tintas, nosotros trabajamos con plastisol.</p>
+									<p>Pros: Alta resistencia y definición, mas suave al tacto, diseños mas económicos.</p>
+									<p>Contras: No se pueden solicitar modificaciones a los diseños en serigrafía debido a que se hacen con una matiz.</p>
+								</div>
+								<div class="color">
+									<p>Color</p>
+									<div class="white"></div>
+									<div class="black"></div>
+									<div class="grey"></div>
+								</div>
+								<div class="sizes">
+									<p class="size-name">Sizes</p>
+									<p>XS - S - M - L - XL</p>
+								</div>
+								<div class="price">
+									<p class="pice-name">Price</p>
+									<p>$7.50</p>
+								</div>
+							</div>
+							<div class="x">
+								<img src="img/x.svg" alt="">
+							</div>
+						</div>
+					</div>
+<!-- /////////////////////////////////////////////////////////////// -->
+					<div class="procuct__item" data-tab="#tab_3">
+						<img src="img/product3.jpg" alt="">
+						<div class="name__product">Polera rosada Misa</div>
+						<div class="name__anime">Death Note</div>
+						<div class="price">$8.50</div>
+					</div>
+
+					<div class="popup__bg" id="tab_3">
+						<div class="popup__content">
+							<div class="content-img">
+								<img src="img/product3.jpg" alt="">
+								<div class="img-mini">
+									<img src="img/mini1.jpg" alt="">
+									<img src="img/mini2.jpg" alt="">
+								</div>
+							</div>
+							<div class="content-text">
+								<div class="name__product">Gorro Pain Akatsuki</div>
+								<div class="name__anime">Naruto</div>
+								<div class="pp__text">
+									<p>Polera de Sukuna del anime Jujutsu Kaisen, personalizada con técnica  de serigrafía 
+									100% artesanal y ecológica. </p>
+									<p>Técnica de reproducción de imágenes que consiste en hacer pasar tinta a través de un tejido montado en un bastidores de aluminio o madera que constituye el molde de impresión. Existen diferentes tipos de tintas, nosotros trabajamos con plastisol.</p>
+									<p>Pros: Alta resistencia y definición, mas suave al tacto, diseños mas económicos.</p>
+									<p>Contras: No se pueden solicitar modificaciones a los diseños en serigrafía debido a que se hacen con una matiz.</p>
+								</div>
+								<div class="color">
+									<p>Color</p>
+									<div class="white"></div>
+									<div class="black"></div>
+									<div class="grey"></div>
+								</div>
+								<div class="sizes">
+									<p class="size-name">Sizes</p>
+									<p>XS - S - M - L - XL</p>
+								</div>
+								<div class="price">
+									<p class="pice-name">Price</p>
+									<p>$8.50</p>
+								</div>
+							</div>
+							<div class="x">
+								<img src="img/x.svg" alt="">
+							</div>
+						</div>
+					</div>
+<!-- /////////////////////////////////////////////////////////////// -->
+					<div class="procuct__item" data-tab="#tab_4">
+						<img src="img/product4.jpg" alt="">
+						<div class="name__product">Polera Misa Amane</div>
+						<div class="name__anime">Death Note</div>
+						<div class="price">$7.50</div>
+					</div>
+
+					<div class="popup__bg" id="tab_4">
+						<div class="popup__content">
+							<div class="content-img">
+								<img src="img/product4.jpg" alt="">
+								<div class="img-mini">
+									<img src="img/mini1.jpg" alt="">
+									<img src="img/mini2.jpg" alt="">
+								</div>
+							</div>
+							<div class="content-text">
+								<div class="name__product">Gorro Pain Akatsuki</div>
+								<div class="name__anime">Naruto</div>
+								<div class="pp__text">
+									<p>Polera de Sukuna del anime Jujutsu Kaisen, personalizada con técnica  de serigrafía 
+									100% artesanal y ecológica. </p>
+									<p>Técnica de reproducción de imágenes que consiste en hacer pasar tinta a través de un tejido montado en un bastidores de aluminio o madera que constituye el molde de impresión. Existen diferentes tipos de tintas, nosotros trabajamos con plastisol.</p>
+									<p>Pros: Alta resistencia y definición, mas suave al tacto, diseños mas económicos.</p>
+									<p>Contras: No se pueden solicitar modificaciones a los diseños en serigrafía debido a que se hacen con una matiz.</p>
+								</div>
+								<div class="color">
+									<p>Color</p>
+									<div class="white"></div>
+									<div class="black"></div>
+									<div class="grey"></div>
+								</div>
+								<div class="sizes">
+									<p class="size-name">Sizes</p>
+									<p>XS - S - M - L - XL</p>
+								</div>
+								<div class="price">
+									<p class="pice-name">Price</p>
+									<p>$7.50</p>
+								</div>
+							</div>
+							<div class="x">
+								<img src="img/x.svg" alt="">
+							</div>
+						</div>
+					</div>
+<!-- //////////////////////////////////////////////////////////////// -->					
+					<div class="procuct__item" data-tab="#tab_5">
+						<img src="img/product5.jpg" alt="">
+						<div class="name__product">Gorro Tanjiro Kamado</div>
+						<div class="name__anime">Kimetsu no Yaiba</div>
+						<div class="price">$5.50</div>
+					</div>
+
+					<div class="popup__bg" id="tab_5">
+						<div class="popup__content">
+							<div class="content-img">
+								<img src="img/product5.jpg" alt="">
+								<div class="img-mini">
+									<img src="img/mini1.jpg" alt="">
+									<img src="img/mini2.jpg" alt="">
+								</div>
+							</div>
+							<div class="content-text">
+								<div class="name__product">Gorro Pain Akatsuki</div>
+								<div class="name__anime">Naruto</div>
+								<div class="pp__text">
+									<p>Polera de Sukuna del anime Jujutsu Kaisen, personalizada con técnica  de serigrafía 
+									100% artesanal y ecológica. </p>
+									<p>Técnica de reproducción de imágenes que consiste en hacer pasar tinta a través de un tejido montado en un bastidores de aluminio o madera que constituye el molde de impresión. Existen diferentes tipos de tintas, nosotros trabajamos con plastisol.</p>
+									<p>Pros: Alta resistencia y definición, mas suave al tacto, diseños mas económicos.</p>
+									<p>Contras: No se pueden solicitar modificaciones a los diseños en serigrafía debido a que se hacen con una matiz.</p>
+								</div>
+								<div class="color">
+									<p>Color</p>
+									<div class="white"></div>
+									<div class="black"></div>
+									<div class="grey"></div>
+								</div>
+								<div class="sizes">
+									<p class="size-name">Sizes</p>
+									<p>XS - S - M - L - XL</p>
+								</div>
+								<div class="price">
+									<p class="pice-name">Price</p>
+									<p>$5.50</p>
+								</div>
+							</div>
+							<div class="x">
+								<img src="img/x.svg" alt="">
+							</div>
+						</div>
+					</div>
+<!-- /////////////////////////////////////////////////////////////// -->					
+					<div class="procuct__item" data-tab="#tab_6">
+						<img src="img/product6.jpg" alt="">
+						<div class="name__product">Polera Jojo’s Bizarre Adventure</div>
+						<div class="name__anime">Jojo’s Bizarre Adventure</div>
+						<div class="price">$7.50</div>
+					</div>
+
+					<div class="popup__bg" id="tab_6">
+						<div class="popup__content">
+							<div class="content-img">
+								<img src="img/product6.jpg" alt="">
+								<div class="img-mini">
+									<img src="img/mini1.jpg" alt="">
+									<img src="img/mini2.jpg" alt="">
+								</div>
+							</div>
+							<div class="content-text">
+								<div class="name__product">Gorro Pain Akatsuki</div>
+								<div class="name__anime">Naruto</div>
+								<div class="pp__text">
+									<p>Polera de Sukuna del anime Jujutsu Kaisen, personalizada con técnica  de serigrafía 
+									100% artesanal y ecológica. </p>
+									<p>Técnica de reproducción de imágenes que consiste en hacer pasar tinta a través de un tejido montado en un bastidores de aluminio o madera que constituye el molde de impresión. Existen diferentes tipos de tintas, nosotros trabajamos con plastisol.</p>
+									<p>Pros: Alta resistencia y definición, mas suave al tacto, diseños mas económicos.</p>
+									<p>Contras: No se pueden solicitar modificaciones a los diseños en serigrafía debido a que se hacen con una matiz.</p>
+								</div>
+								<div class="color">
+									<p>Color</p>
+									<div class="white"></div>
+									<div class="black"></div>
+									<div class="grey"></div>
+								</div>
+								<div class="sizes">
+									<p class="size-name">Sizes</p>
+									<p>XS - S - M - L - XL</p>
+								</div>
+								<div class="price">
+									<p class="pice-name">Price</p>
+									<p>$7.50</p>
+								</div>
+							</div>
+							<div class="x">
+								<img src="img/x.svg" alt="">
+							</div>
+						</div>
+					</div>
+<!-- /////////////////////////////////////////////////////////////// -->
+					<div class="procuct__item" data-tab="#tab_7">
+						<img src="img/product7.jpg" alt="">
+						<div class="name__product">Gorro Rengoku Kyojuro</div>
+						<div class="name__anime">Kimetsu no Yaiba</div>
+						<div class="price">$5.50</div>
+					</div>
+
+					<div class="popup__bg" id="tab_7">
+						<div class="popup__content">
+							<div class="content-img">
+								<img src="img/product7.jpg" alt="">
+								<div class="img-mini">
+									<img src="img/mini1.jpg" alt="">
+									<img src="img/mini2.jpg" alt="">
+								</div>
+							</div>
+							<div class="content-text">
+								<div class="name__product">Gorro Pain Akatsuki</div>
+								<div class="name__anime">Naruto</div>
+								<div class="pp__text">
+									<p>Polera de Sukuna del anime Jujutsu Kaisen, personalizada con técnica  de serigrafía 
+									100% artesanal y ecológica. </p>
+									<p>Técnica de reproducción de imágenes que consiste en hacer pasar tinta a través de un tejido montado en un bastidores de aluminio o madera que constituye el molde de impresión. Existen diferentes tipos de tintas, nosotros trabajamos con plastisol.</p>
+									<p>Pros: Alta resistencia y definición, mas suave al tacto, diseños mas económicos.</p>
+									<p>Contras: No se pueden solicitar modificaciones a los diseños en serigrafía debido a que se hacen con una matiz.</p>
+								</div>
+								<div class="color">
+									<p>Color</p>
+									<div class="white"></div>
+									<div class="black"></div>
+									<div class="grey"></div>
+								</div>
+								<div class="sizes">
+									<p class="size-name">Sizes</p>
+									<p>XS - S - M - L - XL</p>
+								</div>
+								<div class="price">
+									<p class="pice-name">Price</p>
+									<p>$5.50</p>
+								</div>
+							</div>
+							<div class="x">
+								<img src="img/x.svg" alt="">
+							</div>
+						</div>
+					</div>
+<!-- /////////////////////////////////////////////////////////////// -->					
+					<div class="procuct__item" data-tab="#tab_8">
+						<img src="img/product8.jpg" alt="">
+						<div class="name__product">Polera Nezuko Kamado</div>
+						<div class="name__anime">Kimetsu no Yaiba</div>
+						<div class="price">$7.50</div>
+					</div>
+
+					<div class="popup__bg" id="tab_8">
+						<div class="popup__content">
+							<div class="content-img">
+								<img src="img/product8.jpg" alt="">
+								<div class="img-mini">
+									<img src="img/mini1.jpg" alt="">
+									<img src="img/mini2.jpg" alt="">
+								</div>
+							</div>
+							<div class="content-text">
+								<div class="name__product">Gorro Pain Akatsuki</div>
+								<div class="name__anime">Naruto</div>
+								<div class="pp__text">
+									<p>Polera de Sukuna del anime Jujutsu Kaisen, personalizada con técnica  de serigrafía 
+									100% artesanal y ecológica. </p>
+									<p>Técnica de reproducción de imágenes que consiste en hacer pasar tinta a través de un tejido montado en un bastidores de aluminio o madera que constituye el molde de impresión. Existen diferentes tipos de tintas, nosotros trabajamos con plastisol.</p>
+									<p>Pros: Alta resistencia y definición, mas suave al tacto, diseños mas económicos.</p>
+									<p>Contras: No se pueden solicitar modificaciones a los diseños en serigrafía debido a que se hacen con una matiz.</p>
+								</div>
+								<div class="color">
+									<p>Color</p>
+									<div class="white"></div>
+									<div class="black"></div>
+									<div class="grey"></div>
+								</div>
+								<div class="sizes">
+									<p class="size-name">Sizes</p>
+									<p>XS - S - M - L - XL</p>
+								</div>
+								<div class="price">
+									<p class="pice-name">Price</p>
+									<p>$7.50</p>
+								</div>
+							</div>
+							<div class="x">
+								<img src="img/x.svg" alt="">
+							</div>
+						</div>
+					</div>
+<!-- //////////////////////////////////////////////////////////////// -->					
+					<div class="procuct__item" data-tab="#tab_9">
+						<img src="img/product9.jpg" alt="">
+						<div class="name__product">Gorro Muzan Kibutsuji</div>
+						<div class="name__anime">Kimetsu no Yaiba</div>
+						<div class="price">$5.50</div>
+					</div>
+
+					<div class="popup__bg" id="tab_9">
+						<div class="popup__content">
+							<div class="content-img">
+								<img src="img/product9.jpg" alt="">
+								<div class="img-mini">
+									<img src="img/mini1.jpg" alt="">
+									<img src="img/mini2.jpg" alt="">
+								</div>
+							</div>
+							<div class="content-text">
+								<div class="name__product">Gorro Pain Akatsuki</div>
+								<div class="name__anime">Naruto</div>
+								<div class="pp__text">
+									<p>Polera de Sukuna del anime Jujutsu Kaisen, personalizada con técnica  de serigrafía 
+									100% artesanal y ecológica. </p>
+									<p>Técnica de reproducción de imágenes que consiste en hacer pasar tinta a través de un tejido montado en un bastidores de aluminio o madera que constituye el molde de impresión. Existen diferentes tipos de tintas, nosotros trabajamos con plastisol.</p>
+									<p>Pros: Alta resistencia y definición, mas suave al tacto, diseños mas económicos.</p>
+									<p>Contras: No se pueden solicitar modificaciones a los diseños en serigrafía debido a que se hacen con una matiz.</p>
+								</div>
+								<div class="color">
+									<p>Color</p>
+									<div class="white"></div>
+									<div class="black"></div>
+									<div class="grey"></div>
+								</div>
+								<div class="sizes">
+									<p class="size-name">Sizes</p>
+									<p>XS - S - M - L - XL</p>
+								</div>
+								<div class="price">
+									<p class="pice-name">Price</p>
+									<p>$5.50</p>
+								</div>
+							</div>
+							<div class="x">
+								<img src="img/x.svg" alt="">
+							</div>
+						</div>
+					</div>
+<!-- /////////////////////////////////////////////////////////////// -->					
+					<div class="procuct__item" data-tab="#tab_10">
+						<img src="img/product10.jpg" alt="">
+						<div class="name__product">Polera Tomioka Giyuu</div>
+						<div class="name__anime">Kimetsu no Yaiba</div>
+						<div class="price">$7.50</div>
+					</div>
+
+					<div class="popup__bg" id="tab_10">
+						<div class="popup__content">
+							<div class="content-img">
+								<img src="img/product10.jpg" alt="">
+								<div class="img-mini">
+									<img src="img/mini1.jpg" alt="">
+									<img src="img/mini2.jpg" alt="">
+								</div>
+							</div>
+							<div class="content-text">
+								<div class="name__product">Gorro Pain Akatsuki</div>
+								<div class="name__anime">Naruto</div>
+								<div class="pp__text">
+									<p>Polera de Sukuna del anime Jujutsu Kaisen, personalizada con técnica  de serigrafía 
+									100% artesanal y ecológica. </p>
+									<p>Técnica de reproducción de imágenes que consiste en hacer pasar tinta a través de un tejido montado en un bastidores de aluminio o madera que constituye el molde de impresión. Existen diferentes tipos de tintas, nosotros trabajamos con plastisol.</p>
+									<p>Pros: Alta resistencia y definición, mas suave al tacto, diseños mas económicos.</p>
+									<p>Contras: No se pueden solicitar modificaciones a los diseños en serigrafía debido a que se hacen con una matiz.</p>
+								</div>
+								<div class="color">
+									<p>Color</p>
+									<div class="white"></div>
+									<div class="black"></div>
+									<div class="grey"></div>
+								</div>
+								<div class="sizes">
+									<p class="size-name">Sizes</p>
+									<p>XS - S - M - L - XL</p>
+								</div>
+								<div class="price">
+									<p class="pice-name">Price</p>
+									<p>$7.50</p>
+								</div>
+							</div>
+							<div class="x">
+								<img src="img/x.svg" alt="">
+							</div>
+						</div>
+					</div>
+<!-- /////////////////////////////////////////////////////////////// -->					
+					<div class="procuct__item" data-tab="#tab_11">
+						<img src="img/product11.jpg" alt="">
+						<div class="name__product">Polera Nezuko Kamado</div>
+						<div class="name__anime">Kimetsu no Yaiba</div>
+						<div class="price">$7.50</div>
+					</div>
+
+					<div class="popup__bg" id="tab_11">
+						<div class="popup__content">
+							<div class="content-img">
+								<img src="img/product11.jpg" alt="">
+								<div class="img-mini">
+									<img src="img/mini1.jpg" alt="">
+									<img src="img/mini2.jpg" alt="">
+								</div>
+							</div>
+							<div class="content-text">
+								<div class="name__product">Gorro Pain Akatsuki</div>
+								<div class="name__anime">Naruto</div>
+								<div class="pp__text">
+									<p>Polera de Sukuna del anime Jujutsu Kaisen, personalizada con técnica  de serigrafía 
+									100% artesanal y ecológica. </p>
+									<p>Técnica de reproducción de imágenes que consiste en hacer pasar tinta a través de un tejido montado en un bastidores de aluminio o madera que constituye el molde de impresión. Existen diferentes tipos de tintas, nosotros trabajamos con plastisol.</p>
+									<p>Pros: Alta resistencia y definición, mas suave al tacto, diseños mas económicos.</p>
+									<p>Contras: No se pueden solicitar modificaciones a los diseños en serigrafía debido a que se hacen con una matiz.</p>
+								</div>
+								<div class="color">
+									<p>Color</p>
+									<div class="white"></div>
+									<div class="black"></div>
+									<div class="grey"></div>
+								</div>
+								<div class="sizes">
+									<p class="size-name">Sizes</p>
+									<p>XS - S - M - L - XL</p>
+								</div>
+								<div class="price">
+									<p class="pice-name">Price</p>
+									<p>$7.50</p>
+								</div>
+							</div>
+							<div class="x">
+								<img src="img/x.svg" alt="">
+							</div>
+						</div>
+					</div>
+<!-- /////////////////////////////////////////////////////////////// -->					
+					<div class="procuct__item" data-tab="#tab_12">
+						<img src="img/product8.jpg" alt="">
+						<div class="name__product">Polera Tokyo Revengers</div>
+						<div class="name__anime">Tokyo Revengers</div>
+						<div class="price">$7.50</div>
+					</div>
+
+					<div class="popup__bg" id="tab_12">
+						<div class="popup__content">
+							<div class="content-img">
+								<img src="img/product8.jpg" alt="">
+								<div class="img-mini">
+									<img src="img/mini1.jpg" alt="">
+									<img src="img/mini2.jpg" alt="">
+								</div>
+							</div>
+							<div class="content-text">
+								<div class="name__product">Gorro Pain Akatsuki</div>
+								<div class="name__anime">Naruto</div>
+								<div class="pp__text">
+									<p>Polera de Sukuna del anime Jujutsu Kaisen, personalizada con técnica  de serigrafía 
+									100% artesanal y ecológica. </p>
+									<p>Técnica de reproducción de imágenes que consiste en hacer pasar tinta a través de un tejido montado en un bastidores de aluminio o madera que constituye el molde de impresión. Existen diferentes tipos de tintas, nosotros trabajamos con plastisol.</p>
+									<p>Pros: Alta resistencia y definición, mas suave al tacto, diseños mas económicos.</p>
+									<p>Contras: No se pueden solicitar modificaciones a los diseños en serigrafía debido a que se hacen con una matiz.</p>
+								</div>
+								<div class="color">
+									<p>Color</p>
+									<div class="white"></div>
+									<div class="black"></div>
+									<div class="grey"></div>
+								</div>
+								<div class="sizes">
+									<p class="size-name">Sizes</p>
+									<p>XS - S - M - L - XL</p>
+								</div>
+								<div class="price">
+									<p class="pice-name">Price</p>
+									<p>$7.50</p>
+								</div>
+							</div>
+							<div class="x">
+								<img src="img/x.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<img src="img/pay.png" alt="">
+			<p>SOBRE LA TIENDA         FORMAS DE 		ENTREGA FRENTE AL COVID-19         		TÉRMINOS Y CONDICIONES <br>
+				Eco Darkness Tienda © Todos los derechos reservados 2021
+			</p>
+		</div>
+	</footer>
+	<script src="js/main.js"></script>
+</body>
+</html>
