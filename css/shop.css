@@ -209,6 +209,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 .basket p {
   padding: 7px 13px 7px 15px;
@@ -217,6 +218,48 @@ body {
   margin-right: 15px;
   width: 30px;
   height: 30px;
+}
+
+.basket__inner {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #eee;
+  top: 76px;
+  font-size: 18px;
+  line-height: 16px;
+  right: 50px;
+  z-index: 3;
+}
+
+.basket__inner.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cart-text {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.catr__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catr__inner img {
+  width: 30%;
+  padding: 20px;
+}
+
+.title-info {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.counter-wrapper {
+  padding-bottom: 20px;
 }
 
 .category {
@@ -344,7 +387,7 @@ body {
 
 .procuct__item {
   margin-right: 60px;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 }
 
 .procuct__item:hover img {
@@ -373,10 +416,53 @@ body {
   padding-bottom: 12px;
 }
 
+.price__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .price {
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
+  margin-bottom: 25px;
+}
+
+.items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.items__control {
+  background-color: #FFC0CB;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 25px;
+  padding-top: 2px;
+  font-size: 17px;
+  line-height: 20px;
+  cursor: pointer;
+  border-radius: 20%;
+}
+
+.btn {
+  background-color: #FFC0CB;
+  height: 35px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.btn:hover {
+  background-color: #FF69B4;
+  color: #fff;
 }
 
 .popup__bg {
@@ -478,10 +564,6 @@ body {
   padding-bottom: 6px;
 }
 
-.price {
-  margin-bottom: 50px;
-}
-
 .x {
   position: absolute;
   top: 20px;
@@ -521,5 +603,9 @@ body {
     top: 7%;
     left: 11%;
     width: 1000px;
+  }
+
+  .name__product {
+    padding-top: 15px;
   }
 }
