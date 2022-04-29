@@ -114,6 +114,8 @@ const itemInCart = cartWrapper.querySelector(`[data-id="${productInfo.id}"]`);
 
 		cartWrapper.insertAdjacentHTML('beforeend', cartItemHTML)			
 		 }
+
+		 card.querySelector('[data-counter]').innerText = '1';
 	}
 })
 
